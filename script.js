@@ -2,7 +2,7 @@ var sp = document.getElementsByTagName("span");
 var btn_start = document.getElementById("Start");
 var btn_stop = document.getElementById("Stop");
 var t;
-var ms = 0, s = 0, mn = 0, h = 0;
+var ms = 0, s = 0, mn =1, h = 0;
 
 function Start(){
     t = setInterval(update_chrono,100);
@@ -25,7 +25,7 @@ function update_chrono(){
     }
     sp[3].innerHTML = ms ;
     sp[2].innerHTML = s ;
-    sp[1].innerHTML = mn ;
+    sp[0].innerHTML = mn ;
 
 }
 
