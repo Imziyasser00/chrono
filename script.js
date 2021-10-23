@@ -23,10 +23,10 @@ function update_chrono(){
         mn = 0;
         h+=1;
     }
-    sp[3].innerHTML = ms + "ms" ;
-    sp[2].innerHTML = s + "s  ";
-    sp[1].innerHTML = mn + "mn  " ;
-    sp[0].innerHTML = h +"h ";
+    sp[3].innerHTML = ms  ;
+    sp[2].innerHTML = s;
+    sp[1].innerHTML = mn ;
+    sp[0].innerHTML = h ;
 
 }
 
@@ -36,6 +36,7 @@ function Stop() {
 }
 
 function Reset() {
+    clearInterval(t);
     ms = 0;
     s = 0;
     mn = 0;
